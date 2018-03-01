@@ -217,7 +217,7 @@
       video: {deviceId: videoSource ? {exact: videoSource} : undefined}
     };
   
-        navigator.mediaDevices.getUserMedia(mediaConfig).then(function(stream) {    // turn on
+        navigator.mediaDevices.getUserMedia(mediaConfig).then(async function(stream) {    // turn on
 
           // if(navigator.mediaDevices.enumerateDevices()) {
           //   console.log('enumerateDevices:', navigator.mediaDevices.enumerateDevices());
