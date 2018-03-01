@@ -189,7 +189,7 @@
   const video = document.getElementById('video');      
   var   mediaStream;
   var videoSelect = document.querySelector('select#videoSource');
-
+  videoSelect.onchange = getCameraReady;
   // const mediaSource = new mediaSource();
   // try {
   //   video.srcObject = mediaSource;
@@ -351,7 +351,7 @@
   }
 
   ////////// SAVE PICTURE //////////
-  videoSelect.onchange = getCameraReady;
+  
 
   document.getElementById('takePicture').addEventListener("click", function () {
     document.getElementById('concYdiv').style.display = "none";
