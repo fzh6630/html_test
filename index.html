@@ -246,7 +246,10 @@
           // document.getElementById('videoInfo').innerHTML = videoInfo;
 
           try {
+            window.stream = stream; // make stream available to console
+
             video.srcObject = stream;
+
           } catch (error) {
             video.src = URL.createObjectURL(stream);
           }
