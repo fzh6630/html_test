@@ -66,12 +66,14 @@
       <h2>BCA app</h2>
       <h5>Begin by playing the video below, then scroll down:</h5>
       <div class="select">
-        <label for="videoSource">Video source: </label><select id="videoSource"></select><input type="button" value="Refresh Page" onClick="window.location.reload()">
+        <label for="videoSource">Video source: </label><select id="videoSource"></select>
+        <button type="button" class="btn btn-md btn-info"   onClick="window.location.reload()">Refresh Page</button>
       </div>
     </div>
-
-
+    
+    <div>
       <video  id="video" controls="true" autoplay playsinline></video>
+    </div>   
       <!-- <video  id="video" autoplay></video> -->
 <!-- Zoom control option can't be used: getCapabilities() is not recognized  -->
 <!--<div>
