@@ -199,9 +199,10 @@
 
   // Put video listeners into place
 
-  getCameraReady();
   navigator.mediaDevices.enumerateDevices().then(gotDevices).catch(handleError);
 
+  getCameraReady();
+  
   function getCameraReady() {
     if (window.stream) {
       window.stream.getTracks().forEach(function(track) {                                 // stop any existing stream
