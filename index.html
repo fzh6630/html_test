@@ -35,8 +35,8 @@
     /* parentElement clientHeight and scrollHeight is 6 more than height, clientWidth, scrollWidth are same as width */
     /* original videoHeight and videoWidth are 480 and 640 (aspect ratio = 4:3 = 1.333) and this proportion is maintained */
     #video {
-      width:100%;
-      height:100%;
+      width:90%;
+      height:90%;
       /*object-fit: initial;*/
       /*width: 640px;*/
       /*height:480px;*/
@@ -71,7 +71,7 @@
     </div>
 
 
-      <video  id="video" controls="true" autoplay></video>
+      <video  id="video" controls="true" autoplay playsinline></video>
       <!-- <video  id="video" autoplay></video> -->
 <!-- Zoom control option can't be used: getCapabilities() is not recognized  -->
 <!--<div>
